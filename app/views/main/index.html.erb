@@ -1,3 +1,12 @@
 <h1>ToDo App</h1>
 
 <p> This is an app for creating and managing ToDo lists. </p>
+    
+<h2>Tasks</h2>
+
+<ul>
+<% tasks = ['Wash Laundry', 'Put away Laundry', 'Clean Air Fryer']%>
+<% tasks.each do |task| %>
+    <li><%= task %></li>
+<% end %>
+</ul>

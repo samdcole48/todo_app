@@ -5,4 +5,8 @@ class MainController < ApplicationController
   def about
   end
 
+  def hello
+    redirect_to(controller: 'main', action: 'index')
+  end
+
 end

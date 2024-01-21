@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   match 'about', to: 'main#about', via: :get
   # go to the main controller and look for the about method
 
+  match 'hello', to: 'main#hello', via: :get
+
   get 'main/index'
   get 'tasks/index'
   get 'tasks/new'
