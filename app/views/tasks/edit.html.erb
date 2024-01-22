@@ -1,2 +1,12 @@
-<h1>Tasks#edit</h1>
-<p>Find me in app/views/tasks/edit.html.erb</p>
+<%= link_to("Back", "/tasks") %> <br />
+
+<h2>Edit Task</h2>
+<%= form_for(@task) do |f| %>
+
+    <%= render(partial: 'form', locals: {f: f})%>
+
+    <div>
+        <%= f.submit("Edit Task") %>
+    </div>
+
+<% end %>

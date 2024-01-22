@@ -1,2 +1,13 @@
-<h1>Tasks#new</h1>
-<p>Find me in app/views/tasks/new.html.erb</p>
+<%= link_to("Back", "/tasks") %> <br />
+
+<h2>New Task</h2>
+<%= form_for(@task) do |f| %>
+    <%= render(partial: 'form', locals: {f: f})%>
+    <%# call for partial form and pass in f, calling it f%>
+
+    <div>
+        <%= f.submit("Create Task") %>
+    </div>
+
+<% end %>
+<% #note the need for the end tag for the form_for method %>

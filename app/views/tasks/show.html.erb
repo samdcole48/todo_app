@@ -1,0 +1,11 @@
+<%= link_to("Back", "/tasks") %> <br />
+
+<h2><%= @task.name %></h2>
+<ul>
+    <li>Descrpition: <%= @task.description %></li>
+    <li>Position: <%= @task.position %></li>
+    <li>Completed: <%= @task.completed%></li>
+    <%#if @task.category_id != "nil" %>
+        <li>Category Name: <%#= @category.name %></li>
+    <%# end %>
+</ul>
